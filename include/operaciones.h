@@ -11,11 +11,7 @@ typedef enum {
     OP_KILL
 } TipoOperacion;
 
-/* Una instruccion de la sesion.
-   new(pid, tam)  -> pid y tam; ptr es el puntero que le toca
-   use(ptr)       -> ptr; pid es el dueno del puntero
-   delete(ptr)    -> ptr; pid es el dueno del puntero
-   kill(pid)      -> pid */
+
 typedef struct {
     TipoOperacion tipo;
     int pid;
