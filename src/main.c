@@ -1,5 +1,5 @@
 #include <gtk/gtk.h>
-
+#include <string.h>
 #include "interfaz.h"
 
 static void alActivar(GtkApplication *gtkApp, gpointer datos)
