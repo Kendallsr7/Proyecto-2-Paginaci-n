@@ -75,9 +75,9 @@ static void resolverPunteros(Secuencia *s)
     free(dueno);
 }
 
-/* ---------------------------------------------------------------
-   Lectura del archivo
-   --------------------------------------------------------------- */
+
+//Lectura del archivo
+
 
 static const char *saltarSeparadores(const char *p, int *linea)
 {
@@ -260,9 +260,9 @@ int secuenciaCargar(const char *ruta, Secuencia *s, char *error, size_t tamError
     return 1;
 }
 
-/* ---------------------------------------------------------------
-   Generacion aleatoria
-   --------------------------------------------------------------- */
+
+//Generacion aleatoria
+
 
 typedef struct {
     int restantes;    /* operaciones que le quedan al proceso */
@@ -424,9 +424,9 @@ int secuenciaGenerar(Secuencia *s, uint64_t semilla, int procesos, int operacion
     return 1;
 }
 
-/* ---------------------------------------------------------------
-   Escritura y utilidades
-   --------------------------------------------------------------- */
+
+//Escritura y utilidades
+
 
 void operacionTexto(const Operacion *op, char *texto, size_t tamTexto)
 {
